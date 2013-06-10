@@ -1,0 +1,108 @@
+<html>
+<head>
+<title> Main Page</title>
+<script type="text/javascript">
+	<!--
+	function ch(a)
+	{
+		if (a==0) return 1;
+		else return 0;
+	}
+	
+	function func1(){		
+		var t=document.getElementById("label1").value;		
+		var n=t.search(/[^01]/);
+		if (n!=-1) alert("Error! Only 0 and 1!!!");		
+		var r1=parseInt(t.charAt(0))^parseInt(t.charAt(1))^parseInt(t.charAt(2));; 
+		var r2=parseInt(t.charAt(1))^parseInt(t.charAt(2))^parseInt(t.charAt(3));; 
+		var r3=parseInt(t.charAt(0))^parseInt(t.charAt(1))^parseInt(t.charAt(3));; 
+		var ans=t+r1+r2+r3;
+		label2.value=ans;
+	}	
+	function func2(){		
+		var t=document.getElementById("label2").value;		
+		var n=t.search(/[^01]/);
+		if (n!=-1) alert("Error! Only 0 and 1!!!");			
+		//for (var j=0; j<mas.length; j++)
+			//alert(mas[j]);
+			
+		var s1=parseInt(t.charAt(4))^parseInt(t.charAt(0))^parseInt(t.charAt(1))^parseInt(t.charAt(2));	
+		var s2=parseInt(t.charAt(5))^parseInt(t.charAt(1))^parseInt(t.charAt(2))^parseInt(t.charAt(3));	
+		var s3=parseInt(t.charAt(6))^parseInt(t.charAt(0))^parseInt(t.charAt(1))^parseInt(t.charAt(3));	
+		var tmp=s1*4+s2*2+s3;
+		
+		var mas=t.split('');
+		switch (tmp)
+		{
+			case 0:
+				alert("No mistakes");		
+				break;
+			case 1:
+				alert("Error in 5 symbol");
+				mas[4]=ch(mas[4]);
+				var t2=mas.join('');
+				label2.value=t2;
+				label3.value=t2.substr(0,4);
+				break;
+			case 2:
+				alert("Error in 6 symbol");
+				mas[5]=ch(mas[5]);
+				var t2=mas.join('');
+				label2.value=t2;
+				label3.value=t2.substr(0,4);
+				break;
+			case 3:
+				alert("Error in 1 symbol");
+				mas[0]=ch(mas[0]);
+				var t2=mas.join('');
+				label2.value=t2;
+				label3.value=t2.substr(0,4);
+				break;
+			case 4:
+				alert("Error in 7 symbol");
+				mas[6]=ch(mas[6]);
+				var t2=mas.join('');
+				label2.value=t2;
+				label3.value=t2.substr(0,4);break;
+			case 5:
+				alert("Error in 2 symbol");
+				mas[1]=ch(mas[1]);
+				var t2=mas.join('');
+				label2.value=t2;
+				label3.value=t2.substr(0,4);
+				break;
+			case 6:
+				alert("Error in 3 symbol");
+				mas[2]=ch(mas[2]);
+				var t2=mas.join('');
+				label2.value=t2;
+				label3.value=t2.substr(0,4);
+				break;
+			case 7:
+				alert("Error in 4 symbol");
+				mas[3]=ch(mas[3]);
+				var t2=mas.join('');
+				label2.value=t2;
+				label3.value=t2.substr(0,4);
+				break;
+			default:
+				alert("There are more than 1 mistake!");
+				break;
+		}
+	}
+	-->
+</script>
+</head>
+<body>
+<h1> Hamming code</h1>
+<form>
+	<input type="text" value="0000"	maxlength=4 id="label1" >
+	<input type="button" value="Convert To Hamming Code" onClick="func1()" size=100>
+<br>	
+	<input type="text" value="0000000" maxlength=7 id="label2" >
+	<input type="button" value="Enter some mistakes and convert back" onClick="func2()" size=100>
+<br>	
+	<input type="text" maxlength=4 id="label3" readonly>	
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> Main Page</title>
+<script type="text/javascript">
+	<!--
+	var rightHam=new Array('00000000','00010111','00101101','00111010',
+	    		       '01001110','01011001','01100011','01110100',
+			       '10001011','10011100','10100110','10110001',
+			       '11000101','11010010','11101000','11111111');
+									
+	function func1(){	
+		var t=document.getElementById("label1").value;		
+		var n=t.search(/[^01]/);
+		if (n!=-1) alert("Error! Only 0 and 1!!!");	
+		// Make 3+1 check bytes
+		for (var i=0; i<16; i++)
+			if (rightHam[i].substr(0,4)==t){
+				label2.value=rightHam[i];
+				return;
+			}
+	}	
+	
+	function func2(){		
+		var t=document.getElementById("label2").value;		
+		var n=t.search(/[^01]/);
+		if (n!=-1) alert("Error! Only 0 and 1!!!");			
+		var index7, maxTmp=-1;
+		// Compare with const hamming codes for (4,3)
+		for (var i=0; i<16; i++){
+			var tmp=0;
+			for (var j=0; j<9; j++)
+				if (rightHam[i].charAt(j)==t.charAt(j)) tmp++;
+			if (tmp==9){
+				alert("No errors");
+				label2.value=t;
+				label3.value=t.substr(0,4);
+				return;
+			}	
+			//alert(tmp);
+			if (tmp>maxTmp){
+				maxTmp=tmp;
+				index7=i;
+			}		
+		}	
+		//alert(maxTmp, rightHam[index7]);
+		if (maxTmp==8){
+			alert("1 error!");
+			label2.value=rightHam[index7];
+			label3.value=rightHam[index7].substr(0,4);		
+			return;
+		}		
+		alert("There are more than 1 mistake!!!");
+		label3.value="Error";
+		return;
+	}
+	-->
+</script>
+</head>
+<body>
+<h1> Hamming code</h1>
+<form>
+	<input type="text" value="0000" maxlength=4 id="label1" >
+	<input type="button" value="Convert To Hamming Code" onClick="func1()" size=100>
+<br>	
+	<input type="text" value="00000000" maxlength=8 id="label2" >
+	<input type="button" value="Enter some mistakes and convert back" onClick="func2()" size=100>
+<br>	
+	<input type="text" maxlength=4 id="label3" readonly>	
+</form>
+</body>
+</html>

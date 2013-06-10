@@ -1,0 +1,21 @@
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+badChar[ ™ ]= 21
+badChar[ ≠ ]= 19
+badChar[ Ô ]= 3
+badChar[ ß ]= 4
+badChar[ Ï ]= 5
+badChar[   ]= 13
+badChar[ Ä ]= 7
+badChar[ § ]= 9
+badChar[ ‡ ]= 10
+badChar[ • ]= 11
+badChar[ © ]= 23
+badChar[ Å ]= 14
+badChar[ Æ ]= 18
+badChar[ ´ ]= 16
+badChar[ · ]= 20
+badChar[ ® ]= 22
+626061
+2249983
