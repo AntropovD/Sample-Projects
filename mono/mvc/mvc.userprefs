@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="mvc/Views/Home/Thanks.aspx">
+    <Files>
+      <File FileName="mvc/Views/Home/Index.aspx" Line="14" Column="35" />
+      <File FileName="mvc/Controllers/HomeController.cs" Line="28" Column="47" />
+      <File FileName="mvc/Views/Home/RSVPForm.aspx" Line="8" Column="2" />
+      <File FileName="mvc/Models/GuestResponse.cs" Line="18" Column="1" />
+      <File FileName="mvc/Views/Home/Thanks.aspx" Line="7" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
