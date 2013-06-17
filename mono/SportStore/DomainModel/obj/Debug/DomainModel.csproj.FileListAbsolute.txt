@@ -1,0 +1,5 @@
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\DomainModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\DomainModel\bin\Debug\DomainModel.dll
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\DomainModel\bin\Debug\DomainModel.pdb
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\DomainModel\obj\Debug\DomainModel.dll
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\DomainModel\obj\Debug\DomainModel.pdb

@@ -1,0 +1,7 @@
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\WebUI\bin\WebUI.dll
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\WebUI\bin\WebUI.pdb
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\WebUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\WebUI\obj\Debug\WebUI.dll
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\WebUI\obj\Debug\WebUI.pdb
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\WebUI\bin\DomainModel.dll
+C:\Users\Dmitry\Dropbox\git\smallProjects\mono\SportStore\WebUI\bin\DomainModel.pdb
